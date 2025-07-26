@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+}
+
+	#container{
+	width: 800px;
+	margin: 0 auto;
+}
+@media only screen and (min-width: 800px){
+	flex-container{
+		display:flex;
+	}
+	body{
+	background-color: #F26D3D;
+}
+#container{
+	width: 800px;
+	margin: 0 auto;
+}
+	nav{
+	width: 800px;
+	height: auto;	
+	background-color:#3DF2E0;
+	border-radius: 20px;
+	padding: 15px 15px 15px 15px;
+	margin: 10px 20px 15px 0px;
+	text-align: center;
+		display: flex;
+  justify-content: center;
+  gap: 20px;
+	}
+nav a:link{
+	color:#BF785E;
+	font-size: 1.4em;
+	text-decoration: none;
+	margin-right: 10px;
+}
+nav a:visited{
+	color: #F26D3D;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+nav a:hover{
+	color:#4C5456;
+	font-size: 1.4em;
+	text-decoration: underline;
+}
+nav a:active{
+	color:white;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+.left{
+	width: 380px;
+	height: 200px;
+	background-color: #3DF2E0;
+	border-radius: 20px;
+	float: left;
+	margin: 0px 10px 10px 15px;
+	padding: 15px 15px 15px 15px;
+	color: #BF785E;
+	flex-grow:1;
+}
+
+.img1{
+	float: left;
+	margin-right: 20px
+}
+.right{
+	width: 380px;
+	height: 200px;
+	background-color: #3DF2E0;
+	border-radius: 20px;
+	float: left;
+	margin: 0px 0px 10px 0px;
+	padding: 15px 15px 15px 15px;
+	color:#BF785E;
+	flex-grow:1;
+}
+	.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+	}
+	footer{
+	color: #4C5456;
+	clear: both;
+}
+.logo2{
+	width: 50px;
+  	height: 70px;
+	float: right;
+	}
+	.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo1 {
+  width: 50px;
+  height: 70px;
+  float:left;
+}
+	header{
+		text-align: center;
+	}
+header >h1{
+	color:#4C5456;	
+	align-align: center;
+}
+h3{
+	text-align: center;
+	color: #4C5456;
+}
+	p{
+		font-size: .80em;
+	}
+}
+	@media only screen and (max-widith: 799px){
+	.flex-container{
+		display:flex;
+		flex-direction: column;
+	}
+	}
+@media only screen and (max-width:799px) and (orientation: portrait){
+	
+}

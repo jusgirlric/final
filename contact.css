@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #F26D3D;
+}
+#container{
+	width: 800px;
+	margin: 0 auto;
+}
+ul{
+	list-style-type: none;
+	width: 200px;
+	height: 415px;	
+	float: left;
+	background-color:#3DF2E0;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	padding: 15px 15px 0px 15px;
+	margin: 10px 20px 0px 0px;
+	}
+li a{
+	display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a:link{
+	color:#BF785E;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+li a:visited{
+	color: #F26D3D;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+li a:hover{
+	color:#4C5456;
+	font-size: 1.4em;
+	text-decoration: underline;
+}
+li a:active{
+	color:white;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+
+.top{
+	width: 480px;
+	height: 200px;
+	background-color: #3DF2E0;
+	border-radius: 20px;
+	margin: 10px 0px 15px 0px;
+	padding: 15px 15px 15px 15px;
+	float: right;
+	font-size: .95em
+		
+}
+.bottom{
+	width: 480px;
+	height: 200px;
+	background-color: #3DF2E0;
+	border-radius: 20px;
+	margin: 0px 0px 15px 0px;
+	padding: 15px 15px 15px 15px;
+	float: right;
+    font-size:.95em
+}
+.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+img{
+  float: left;
+  margin-right: 20px;  
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  resize: vertical;
+    font-size:.95em;
+color: white;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+    font-size:.95em;
+	color: white;
+}
+
+input[type=submit] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+    font-size:.95em;
+	color: #F26D3D;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+	height: 680px;
+	width: 480px;
+  margin-top: 480px;
+	margin-left:540px;
+	border-radius: 20px;
+  background-color: #60A69F;
+  padding: 10px 10px 10px 10px;
+	float: center;
+	
+}
+ol{
+	width: 200px;
+	height: 720px;	
+	float: left;
+	background-color:#3DF2E0;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 15px 15px 0px 15px;
+	margin: 0px 20px 15px 0px;
+}
+
+.col-25 {
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  width: 75%;
+  margin-top: 6px;
+}
+input[type=email]{
+	width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  resize: vertical;
+    font-size:.95em;
+	color: white;
+}
+input[type=button]{
+    font-size:.95em;
+	background-color: #F26D3D;
+	color: white;
+	float: right;
+	padding: 10px 10px 10px 10px;
+	border-radius: 20px;
+}
+.logo2{
+	width: 50px;
+  	height: 70px;
+	float: right;
+	}
+	.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo1 {
+  width: 50px;
+  height: 70px;
+  float:left;
+}
+header >h1{
+	
+    text-align: center; color:#4C5456;
+}
+audio{
+	margin-left: 80px;
+}
+article >h3{
+	text-align: center;
+	color:#BF785E;
+}
+article >h2{
+	text-align: center;
+	color:#BF785E;
+}
+article >p{
+	color:#BF785E;
+}
+footer{
+	clear:both;
+	color: #4C5456;
+	float:center;
+	margin-left: 200px;
+	margin-top: 5px;
+}

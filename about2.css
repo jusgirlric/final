@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+}
+
+	#container{
+	width: 800px;
+	margin: 0 auto;
+}
+body{
+	background-color: #F26D3D;
+}
+nav{
+	width: 140px;
+	height: 415px;	
+	background-color:#3DF2E0;
+	border-radius: 20px;
+	padding: 15px 15px 15px 15px;
+	margin: 10px 20px 15px 0px;
+	float: left;
+	display: flex;
+    justify-content: center;
+	text-align: center;
+    gap: 20px;
+	}
+nav a:link{
+	color:#BF785E;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+nav a:visited{
+	color: #F26D3D;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+nav a:hover{
+	color:#4C5456;
+	font-size: 1.4em;
+	text-decoration: underline;
+}
+nav a:active{
+	color:white;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+.top{
+	flex-grow:1;
+	width: 600px;
+	height: auto;
+	background-color: #3DF2E0;
+	border-top-left-radius:  20px;
+	border-top-right-radius: 20px;
+	margin: 10px 0px 0px 0px;
+	padding: 5px 15px 5px 15px;
+	font-size: .95em;
+	float: right;
+	color:#BF785E;
+}
+.center{
+	flex-grow: 1;
+	width: 600px;
+	height: auto;
+	background-color: #3DF2E0;
+	padding: 5px 15px 5px 15px;
+    font-size:.95em;
+	float: right;
+	color:#BF785E;
+}
+.bottom{
+	flex-grow: 1;
+	width: 600px;
+	height: auto;
+	background-color: #3DF2E0;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin: 0px 0px 10px 0px;
+	padding: 5px 15px 5px 15px;
+    font-size:.95em;
+	float: right;
+	color:#BF785E;
+}
+.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.img1{
+  margin-left: 215px;  
+}
+	.logo2{
+	width: 50px;
+  	height: 70px;
+	float: right;
+	}
+	.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo1{
+  width: 50px;
+  height: 70px;
+  float:left;
+}
+	h1{
+	color:#4C5456;
+	text-align:center;
+}
+article >h2{
+	text-align: center;
+	color:#BF785E;
+}
+footer{
+	color:#4C5456;
+	clear:both;
+}
+
