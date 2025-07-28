@@ -8,49 +8,44 @@ body {
   margin: 0;
 	background-color:#F26D3D;
 }
-#container{;
+#container{
 	width: 800px;
 	margin:0 auto;
 }
 
 @media only screen and (min-width: 800px){
-	flex-container{
-		display:flex;
-	}
-.navbar {
-	float:left;
-	width: 160px;
-	height: 620px;	
+	.flex-container {
+  display: flex;
+}
+nav{
+	width: auto;
+	height: auto;	
 	background-color:#3DF2E0;
 	border-radius: 20px;
 	padding: 15px 15px 15px 15px;
-	margin: 10px 20px 15px 0px;
+	margin: 10px 20px 15px 20px;
 	text-align: center;
 		display: flex;
   justify-content: center;
   gap: 20px;
 	}
-.navbar a{
-	display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-.navbar a:link{
+nav a:link{
 	color:#BF785E;
 	font-size: 1.4em;
 	text-decoration: none;
+	margin-right: 10px;
 }
-.navbar a:visited{
+nav a:visited{
 	color: #F26D3D;
 	font-size: 1.4em;
 	text-decoration: none;
 }
-.navbar a:hover{
+nav a:hover{
 	color:#4C5456;
 	font-size: 1.4em;
 	text-decoration: underline;
 }
-.navbar a:active{
+nav a:active{
 	color:white;
 	font-size: 1.4em;
 	text-decoration: none;
@@ -59,52 +54,50 @@ header >h1{
     text-align: center; 
 	color:#4C5456;
 }
-header >p{
+h4{
 	text-align: center;
 	padding: 15px 15px 15px 15px;
 	color:#4C5456;
 }
-	.top{
+	.right{
 	flex-grow:1;
-	width: auto;
+	width: 560px;
 	height: auto;
 	background-color: #3DF2E0;
 	border-radius: 20px;
-	margin: 10px 15px 10px 230px;
-	padding: 15px 15px 15px 15px;
-
+	margin: 10px 15px 0px 15px;
+	padding: 15px 15px 15px 50px;
+		align-content: center;
 	}
-	.bottom_left{
-	flex-grow:1;
-	width: 630px;
-	height: 330px;
-	background-color: #3DF2E0;
-	border-radius: 20px;
-	margin: 10px 15px 10px 230px;
-	padding: 15px 15px 15px 15px;
-	}
-	.bottom_right{
-	flex-grow:1;
-	width: 400px;
-	height: 330px;
-	background-color: #3DF2E0;
-	border-radius: 20px;
-	margin: 10px 0px 10px 0px;
-	padding: 15px 15px 15px 15px;
-	float: right;
-	}
-	.center{
+	.left{
 		flex-grow: 1;
-		width:230px;
-		height:300px;
+		width:200px;
+		height:400px;
 		margin: 10px 15px 10px 15px;
-		float:right;
 	}
 	img{
 		margin-right:10px;
 		margin-left: 10px;
 	}
+	.delius-regular {
+  font-family: 'Delius', cursive;
+}
+	.ui-tabs .ui-tabs-nav li a {
+  font-family: 'Delius', cursive;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  color: #BF785E;
+}
+
+.ui-tabs .ui-tabs-panel {
+  background-color: #60A69F;
+  padding: 1em;
+  border-radius: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
 footer{
+	font-family: 'Delius', cursive;
 	color:#4C5456;
 	clear:both;
 }

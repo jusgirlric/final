@@ -31,6 +31,7 @@ nav a:link{
 	color:#BF785E;
 	font-size: 1.4em;
 	text-decoration: none;
+	margin-right: 10px;
 }
 nav a:visited{
 	color: #F26D3D;
