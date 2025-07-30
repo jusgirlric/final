@@ -4,12 +4,16 @@
 	box-sizing: border-box;
 }
 body{
-	background-color: #F26D3D;
+	background: linear-gradient(to bottom, rgba(242,109,67,1), rgba(242,109,67,.5));
 }
 #container{
 	width: 800px;
 	margin: 0 auto;
 }
+@media only screen and (min-width: 800px){
+	flex-container{
+		display:flex;
+	}
 ul{
 	list-style-type: none;
 	width: 200px;
@@ -55,7 +59,8 @@ li a:active{
 	margin: 10px 0px 15px 0px;
 	padding: 15px 15px 15px 15px;
 	float: right;
-	font-size: .95em
+	font-size: .95em;
+	flex-grow: 1;
 		
 }
 .bottom{
@@ -66,7 +71,8 @@ li a:active{
 	margin: 0px 0px 15px 0px;
 	padding: 15px 15px 15px 15px;
 	float: right;
-    font-size:.95em
+    font-size:.95em;
+	flex-grow: 1;
 }
 .delius-regular {
   font-family: "Delius", cursive;
@@ -195,4 +201,14 @@ footer{
 	float:center;
 	margin-left: 200px;
 	margin-top: 5px;
+}
+}
+@media only screen and (max-widith: 799px){
+	.flex-container{
+		display:flex;
+		flex-direction: column;
+	}
+}
+		@media only screen and (max-width:799px) and (orientation: portrait){
+			
 }

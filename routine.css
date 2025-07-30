@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 body{
-	background-color: #F26D3D;
+	background: linear-gradient(to bottom, rgba(242,109,67,1), rgba(242,109,67,.5));
 }
 #container{
 	width: 800px;
@@ -130,12 +130,16 @@ table{
 th, td{
 	background-color: #3DF2E0;
 }
+	th{
+		text-decoration: underline;
+		font-size: 1.2em;
+	}
 caption{
 	text-align: center;
 	border: 5px solid #3DF2E0;
 	padding: 10px 10px 10px 10px;
 	border-radius: 20px;
-	font-size:.95em;
+	font-size:1.2em;
 	background-color: #3DF2E0;
 	margin-bottom: 10px;
 	color:#BF785E;
