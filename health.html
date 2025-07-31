@@ -2,8 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Corgi Health</title>
-<link rel="stylesheet" href="health.css">
+<link rel="stylesheet" href="main.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">		
@@ -16,14 +17,14 @@
 			<h1 class="delius-regular"><b>An Apple A Day</b></h1>
   <img class="logo2" src="images/Logo.jpg" alt="logo">
 </header>
-		  <nav class="delius-regular"><p>
+		  <nav class="nav-top"><p>
 			 <a href="index.html" target="_blank">Home</a>
 			  <a href="corgi_about.html" target="_blank">About</a>
 			 <a href="corgi_qt.html" target="_blank">Quality Time</a>
 			 <a href="corgi_routine.html" target="_blank">Routine</a>
 			 </p></nav>
-  <section class="flex-container">
-				<article class="left">
+  <section class="flex-container-snoozing">
+				<article class="left-health">
 			<script>
 function dragstartHandler(ev) {
   ev.dataTransfer.setData("text", ev.target.id);
@@ -40,23 +41,26 @@ function dropHandler(ev) {
 }
 </script>
 
-<p class="delius-regular"><b><i>Our pups rely on us to make the right decisions to keep them healthy. It is as easy as moving them from an unhealthy place to a health place. Practrice by moving the picture of my Corgi mix from one box to the other.</i></b></p>
+<p class="health-boxes"><b><i>Our pups rely on us to make the right decisions to keep them healthy. It is as easy as moving them from an unhealthy place to a health place. Practrice by moving the picture of my Corgi mix from one box to the other.</i></b></p>
 <div id="div1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
 <img id="img1" src="images/Drawing.jpg" alt="drawing" draggable="true" ondragstart="dragstartHandler(event)" width="130">
 </div>
 
 <div id="div2" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
 			</article>
-			<article class="top"><img src="images/Donut.png" alt="donut" style="width:130px">	
+	  <div>
+			<article class="top-health"><img class="img-health1" src="images/Donut.png" alt="donut" style="width:130px">	
 				<h2 class="delius-regular"><b><i>The Donut of Shame</i></b></h2>
 			<p class="delius-regular"><b>Generally, dogs are not excited when it comes to visiting the Vet's office. This is especially true for the Corgi mix breed, and when a visit results in spending some time in the donut of shame. However, there are a few key things that can be done to limit Vet visits and keep a dog healthy.</b></p>
 		  </article>
-			<article class="center"><img src="images/Unhappy.png" alt="not happy" style="width:130px"><h2 class="delius-regular"><b><i>Did you say bath?</i></b></h2> <p class="delius-regular"><b>From what I have read and experienced, Corgi mix breeds are complete drama queens when it comes to receiving a bath and getting their nails clipped. One would swear I was dropping him off to get tourtured. Despite the theatrics, it is an important part of keeping them healthy.</b></p>
+			<article class="center-health"><img class="img-health2" src="images/Unhappy.png" alt="not happy" style="width:130px"><h2 class="delius-regular"><b><i>Did you say bath?</i></b></h2> <p class="delius-regular"><b>From what I have read and experienced, Corgi mix breeds are complete drama queens when it comes to receiving a bath and getting their nails clipped. One would swear I was dropping him off to get tourtured. Despite the theatrics, it is an important part of keeping them healthy.</b></p>
 		  </article>
-			<article class="bottom"><img src="images/teeth.JPG" alt="teeth" style="width:130px"><h2 class="delius-regular"><b><i>Cheeeeeese!</i></b></h2> <p class="delius-regular"><b>Another important way to keep a Corgi mix breed health is through oral care. This kind of care can involve brushing their teeth, dental treats and annual teeth cleaning at the Vet. In my household, I use a dental gel called "Twist and Lick." I have incooperated into my dog's daily morning routine.</b></p>
+			<article class="bottom-health"><img class="img-health3" src="images/teeth.JPG" alt="teeth" style="width:130px"><h2 class="delius-regular"><b><i>Cheeeeeese!</i></b></h2> <p class="delius-regular"><b>Another important way to keep a Corgi mix breed health is through oral care. This kind of care can involve brushing their teeth, dental treats and annual teeth cleaning at the Vet. In my household, I use a dental gel called "Twist and Lick." I have incooperated into my dog's daily morning routine.</b></p>
 		  </article>
+	  </div>
 	  </section>
-		<section class="flex-container">
+		<section class="flex-container-row">
+			<article class="health-ol">
 				<ol type="1">
 			<h4 class="delius-regular">&#129298<b>Other ways to keep them healthy</b>&#129298</h4>
 					<li class="delius-regular"><b><a href="exercise.html" target="_blank">Daily Exercise</a></b></li>
@@ -65,15 +69,17 @@ function dropHandler(ev) {
 					<li class="delius-regular"><b>Supplements</b></li>
 					<li class="delius-regular"><b>Feeding Schedule</b></li>
 			</ol>
+			</article>
+			<article class="health-ul">
 			<ul>
 				<h4 class="delius-regular">&#128138<b>Medications/Supplements Examples</b>&#128138</h4>
 				<li class="delius-regular"><b>Apoquel (Allergies)</b></li>
 				<li class="delius-regular"><b>Dog is Human (Multi-vitamin Treat)</b></li>
 				<li class="delius-regular"><b>Cosequin (Joint Health Chews)</b></li>
 			</ul>
-
-			<footer class="delius-regular">&copy;Copyright Ricci Dennison 2025</footer>
+			</article>
 		</section>
+		<footer class="delius-regular">&copy;Copyright Ricci Dennison 2025</footer>
 	</div>
 </body>
 </html>

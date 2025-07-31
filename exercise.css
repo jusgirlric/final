@@ -54,12 +54,12 @@ header >h1{
     text-align: center; 
 	color:#4C5456;
 }
-h4{
+.exercise-subtitle{
 	text-align: center;
 	padding: 15px 15px 15px 15px;
 	color:#4C5456;
 }
-	.right{
+	.exercise-right{
 	flex-grow:1;
 	width: 530px;
 	height: auto;
@@ -68,14 +68,14 @@ h4{
 	margin: 10px 15px 0px 15px;
 	padding: 15px 15px 15px 60px;
 	}
-	.left{
+	.exercise-left{
 		flex-grow: 1;
 		width:180px;
 		height:400px;
 		margin: 10px 10px 10px 15px;
 		border-radius: 20px;
 	}
-	img{
+	.exercise-img{
 		margin-right:10px;
 		margin-left: 10px;
 	}
@@ -96,7 +96,7 @@ h4{
 	margin-left: 20px;
 	margin-right: 20px;
 }
-	h5{
+	.exercise-tabs{
 		color: #4C5456;
 		text-align: center;
 	}

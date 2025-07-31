@@ -3,15 +3,17 @@
 *{
 	box-sizing: border-box;
 }
-
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #F26D43;
+  background: linear-gradient(to bottom, rgba(242,109,67,1), rgba(242,109,67,0.5));
+}
 	#container{
 	width: 800px;
 	margin: 0 auto;
 }
-body{
-	background: linear-gradient(to bottom, rgba(242,109,67,1), rgba(242,109,67,.5));
-}
-ul{
+.nav-about ul{
 	list-style-type: none;
 	width: 200px;
 	height: 590px;	
@@ -19,7 +21,7 @@ ul{
 	background-color:#3DF2E0;
 	border-radius: 20px;
 	padding: 15px 15px 0px 15px;
-	margin: 10px 10px 0px 0px;
+	margin: 10px 20px 0px 0px;
 	}
 li a{
 	display: block;
@@ -46,9 +48,9 @@ li a:active{
 	font-size: 1.4em;
 	text-decoration: none;
 }
-.top{
+.about-top{
 	flex-grow:1;
-	width: 560px;
+	width: 550px;
 	height: auto;
 	background-color: #3DF2E0;
 	border-top-left-radius:  20px;
@@ -59,9 +61,9 @@ li a:active{
 	float: right;
 	color:#BF785E;
 }
-.center{
+.about-center{
 	flex-grow: 1;
-	width: 560px;
+	width: 550px;
 	height: auto;
 	background-color: #3DF2E0;
 	padding: 5px 15px 5px 15px;
@@ -69,9 +71,9 @@ li a:active{
 	float: right;
 	color:#BF785E;
 }
-.bottom{
+.about-bottom{
 	flex-grow: 1;
-	width: 560px;
+	width: 550px;
 	height: auto;
 	background-color: #3DF2E0;
 	border-bottom-left-radius: 20px;
@@ -87,36 +89,40 @@ li a:active{
   font-weight: 400;
   font-style: normal;
 }
-.img1{
+.img-about{
   margin-left: 215px;  
 }
-	.logo2{
-	width: 50px;
-  	height: 70px;
-	float: right;
-	}
-	.header-container {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
 }
 
-.logo1{
+.header-container h1 {
+  margin: 0 auto;
+  color: #4C5456;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.logo1, .logo2 {
   width: 50px;
   height: 70px;
-  float:left;
 }
-	h1{
-	color:#4C5456;
-	text-align:center;
-}
-article >h2{
+.about-top h2{
 	text-align: center;
 	color:#BF785E;
 }
+.about-center h2{
+	text-align: center;
+	color:#BF785E;
+	}	
+	.about-bottom h2{
+	text-align: center;
+		color: #BF785E;
+	}
 footer{
 	color:#4C5456;
 	clear:both;
 }
-

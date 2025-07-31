@@ -3,18 +3,26 @@
 *{
 	box-sizing: border-box;
 }
-
+body{
+	background: linear-gradient(to bottom, rgba(242,109,67,1), rgba(242,109,67,.5));
+}
 	#container{
 	width: 800px;
 	margin: 0 auto;
 }
 @media only screen and (min-width: 800px){
-	flex-container{
-		display:flex;
+		.flex-container-snoozing{
+		display: flex;
+  align-items: flex-start;
+  gap: 20px;
+		flex-warp: wrap;
 	}
-body{
-	background: linear-gradient(to bottom, rgba(242,109,67,1), rgba(242,109,67,.5));
-}
+	.flex-container-row{
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+	}
 nav{
 	width: 800px;
 	height: auto;	
@@ -48,19 +56,19 @@ nav a:active{
 	font-size: 1.4em;
 	text-decoration: none;
 }
-.left{
-	float: left;
+.left-health{
   padding: 15px 15px 15px 15px;
 	background-color: #3DF2E0;
 	border-radius: 20px;
 	flex-grow:1;
 	width: 200px;
 	height: 620px;
+	font-family: "Delius", cursive;
 	font-size: .95em;
 	margin-top: 10px;
 	color: #BF785E;
 }
-.top{
+.top-health{
 	flex-grow:1;
 	width: 580px;
 	height: 200px;
@@ -69,10 +77,9 @@ nav a:active{
 	margin: 10px 0px 10px 0px;
 	padding: 15px 15px 15px 15px;
 	font-size: .95em;
-	float: right;
 	color:#BF785E;
 }
-.center{
+.center-health{
 	flex-grow: 1;
 	width: 580px;
 	height: 200px;
@@ -81,10 +88,9 @@ nav a:active{
 	margin: 0px 0px 10px 0px;
 	padding: 15px 15px 15px 15px;
     font-size:.95em;
-	float: right;
 	color:#BF785E;
 }
-.bottom{
+.bottom-health{
 	flex-grow: 1;
 	width: 580px;
 	height: 200px;
@@ -93,7 +99,6 @@ nav a:active{
 	margin: 0px 0px 10px 0px;
 	padding: 15px 15px 15px 15px;
     font-size:.95em;
-	float: right;
 	color:#BF785E;
 }
 .delius-regular {
@@ -101,10 +106,20 @@ nav a:active{
   font-weight: 400;
   font-style: normal;
 }
-img{
+.img-health3{
   float:left;
   margin-right: 20px;  
 }
+	.img-health1{
+	float:left;
+  margin-right: 20px;
+		padding-top: 60px;
+	}
+	.img-health2{
+		float:left;
+  margin-right: 20px;
+		padding-top: 20px;
+	}
 	.logo2{
 	width: 50px;
   	height: 70px;
@@ -122,65 +137,71 @@ img{
   height: 70px;
   float:left;
 }
-header>h1{
+header >h1{
     text-align: center; 
 	color:#4C5456;
 }
-section>h1{
-    text-align: center; 
-	color:#4C5456;
-}
-section>p{
-	text-align: center; 
-	color:aliceblue;
-}
-article >h2{
+
+.top-health h2,
+	.center-health h2,
+	.bottom-health h2{
 	text-align: center;
 	color:#BF785E;
 }
-article >p{
+.top-health p,
+	.center-health p,
+	.bottom-health p{
+		color:#BF785E;
 	margin-left: 20px;
 }
+	.health-boxes{
+		color:#BF785E;
+	}
 footer{
 	color:#4C5456;
 	clear:both;
 }
-ol li{
+.health-ol ol li{
 	border-radius: 20px;
 	font-size:.95em;
 	color: #BF785E;
 	margin-left: 30px;
 }
-ol{
+.health-ol{
 	background-color:#3DF2E0;
 	border-radius: 20px;
-	color: #BF785E;
-	flex-grow: 1;
+	width: 320px;
 	height: 200px;
-	padding: 10px 10px 10px 10px;
-	float: left;
-}
-h4{
+	padding: 10px 5px 10px 5px;
+	margin: 10px 0px 10px 10px;
+	flex:1 1 45%;
+	display: flex;
+	align-items: flex-start;
+	gap: 15px;
+	}
+.health-ol h4,
+	.health-ul h4{
 	text-align: center;
 	text-decoration: underline;
+		color: #BF785E;
 }
-ul{
+.health-ul{
 	background-color:#3DF2E0;
 	border-radius: 20px;
-	color: #BF785E;
-	flex-grow: 1;
+	width: 320px;
 	height: 200px;
-	padding: 10px 10px 10px 10px;
-	float: right;
+		margin: 10px 0px 10px 5px;
+	padding: 10px 5px 10px 5px;
+	flex:1 1 45%;
+	display: flex;
+	align-items: flex-start;
+	gap: 15px;
 }
-ul li{
+.health-ul ul li{
 	border-radius: 20px;
 	font-size:.95em;
 	color:#BF785E;
 	margin-left: 30px;
-}
-h3{
-	margin-left: 240px;
 }
 #div1{
   width: 150px;
@@ -201,7 +222,7 @@ h3{
 }
 
 }
-@media only screen and (max-widith: 799px){
+@media only screen and (max-width: 799px){
 	.flex-container{
 		display:flex;
 		flex-direction: column;

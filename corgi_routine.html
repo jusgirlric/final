@@ -2,8 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>corgi_routine</title>
-<link rel="stylesheet" href="routine.css">
+<link rel="stylesheet" href="main.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">		
@@ -16,8 +17,8 @@
 			<h1 class="delius-regular"><b>A Day in the Life</b></h1>
   <img class="logo2" src="images/Logo.jpg" alt="logo">
 </header>
-		<section class="flex-container">
-		   <nav>
+		<section class="flex-container-snoozing">
+		   <nav class="nav-routine">
 			<ul>
 				<li class="delius-regular"><a href="index.html" target="_blank">Home</a></li>
 		<li class="delius-regular"><a href="corgi_about.html" target="_blank">About</a></li>
@@ -25,13 +26,14 @@
 				<li class="delius-regular"><a href="health.html" target="_blank">Health</a></li>
 			</ul>
 				</nav>
-			
-			<article class="top-right"><img src="images/Lou_17.JPG" alt="hey" style="width:130px">	
+			<div class="routine-content">
+			<article class="top-routine"><img class="routine-img" src="images/Lou_17.JPG" alt="hey" style="width:130px">	
 				<h2 class="delius-regular"><b><i>What Time is it...Lou's Time</i></b></h2>
 			<p class="delius-regular"><b>This is the face of a dog who knows what he wants and knows when it is time to get it. This is the face I see when it’s time to get up and have breakfast, when it is time to go outside, when it is time for dinner, when it is time for a biscuit, and when it is time to go to bed. His routine is very important to him and his health. You can set your watch by it.</b></p>
-		  </article>
+		  </article> 
+				<article class="routine-table">
 			<table>
-				<caption class="delius-regular"><b>Lou's Daily Schedule</b></caption>
+				<caption class="routine-caption"><b>Lou's Daily Schedule</b></caption>
 			<tr>
 				<th class="delius-regular"><b>Time</b></th>
 				<th class="delius-regular"><b>Activity</b></th>
@@ -73,8 +75,10 @@
 					<td class="delius-regular"><b>Bed Time (Good Night!)</b></td>
 				</tr>
 			</table>
-			<footer class="delius-regular">&copy;Copyright Ricci Dennison 2025</footer>
-		</section>
+				</article>
+	</div>
+	</section>
+		<footer class="delius-regular">&copy;Copyright Ricci Dennison 2025</footer>
 	</div>
 </body>
 </html>

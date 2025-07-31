@@ -11,14 +11,16 @@ body{
 	margin: 0 auto;
 }
 @media only screen and (min-width: 800px){
-	flex-container{
-		display:flex;
+	.flex-container-snoozing{
+		display: flex;
+  align-items: flex-start;
+  gap: 20px;
+		flex-warp: wrap;
 	}
-ul{
+.nav-snoozing >ul{
 	list-style-type: none;
-	width: 200px;
+	width: 180px;
 	height: 410px;	
-	float: left;
 	background-color:#3DF2E0;
 	border-radius: 20px;
 	padding: 15px 15px 0px 15px;
@@ -49,36 +51,32 @@ li a:active{
 	font-size: 1.4em;
 	text-decoration: none;
 }
-.top{
+.top-snoozing{
 	flex-grow:1;
-	width: 580px;
+	width: auto;
 	height: 200px;
 	background-color: #3DF2E0;
 	border-radius: 20px;
-	margin: 10px 0px 10px 0px;
+	margin: 10px 0px 10px 10px;
 	padding: 15px 15px 15px 15px;
 	font-size: .85em;
-	float: right;
-	color:#BF785E;
 }
-.bottom{
+.bottom-snoozing{
 	flex-grow: 1;
-	width: 580px;
+	width: auto;
 	height: 200px;
 	background-color: #3DF2E0;
 	border-radius: 20px;
-	margin: 0px 0px 10px 0px;
+	margin: 10px 0px 10px 10px;
 	padding: 15px 15px 15px 15px;
     font-size:.85em;
-	float: right;
-	color:#BF785E;
 }
 .delius-regular {
   font-family: "Delius", cursive;
   font-weight: 400;
   font-style: normal;
 }
-img{
+.img-snoozing{
   float:left;
   margin-right: 20px;
 }
@@ -104,15 +102,15 @@ header>h2{
     text-align: center; 
 	color:#4C5456;
 }
-section>p{
-	text-align: center; 
-	color:#BF785E;
-}
-article >h2{
+.top-snoozing h2,
+.bottom-snoozing h2{
+	color: #BF785E;
 	text-align: center;
-	color:#BF785E;
 }
-article >p{
+.top-snoozing p,
+.bottom-snoozing p{
+	color: #BF785E;
+	font-size:.85em;
 	margin-left: 20px;
 }
 footer{
@@ -120,7 +118,7 @@ footer{
 	clear:both;
 }
 
-@media only screen and (max-widith: 799px){
+@media only screen and (max-width: 799px){
 	.flex-container{
 		display:flex;
 		flex-direction: column;

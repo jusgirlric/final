@@ -14,7 +14,7 @@ body{
 	flex-container{
 		display:flex;
 	}
-ul{
+.nav-contact >ul{
 	list-style-type: none;
 	width: 200px;
 	height: 415px;	
@@ -51,7 +51,7 @@ li a:active{
 	text-decoration: none;
 }
 
-.top{
+.contact-top{
 	width: 480px;
 	height: 200px;
 	background-color: #3DF2E0;
@@ -63,7 +63,7 @@ li a:active{
 	flex-grow: 1;
 		
 }
-.bottom{
+.contact-bottom{
 	width: 480px;
 	height: 200px;
 	background-color: #3DF2E0;
@@ -79,7 +79,7 @@ li a:active{
   font-weight: 400;
   font-style: normal;
 }
-img{
+.img-contact{
   float: left;
   margin-right: 20px;  
 }
@@ -113,7 +113,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.container {
+.container-about{
 	height: 680px;
 	width: 480px;
   margin-top: 480px;
@@ -124,7 +124,7 @@ input[type=submit]:hover {
 	float: center;
 	
 }
-ol{
+.ol-audio{
 	width: 200px;
 	height: 720px;	
 	float: left;
@@ -181,20 +181,23 @@ header >h1{
 	
     text-align: center; color:#4C5456;
 }
-audio{
+.audio{
 	margin-left: 80px;
 }
-article >h3{
+.contact-top >h3{
 	text-align: center;
 	color:#BF785E;
 }
-article >h2{
+.contact-bottom >h2{
 	text-align: center;
 	color:#BF785E;
 }
-article >p{
+.contact-top >p{
 	color:#BF785E;
-}
+	}
+.contact-bottom >p{
+	color:#BF785E;	
+	}	
 footer{
 	clear:both;
 	color: #4C5456;

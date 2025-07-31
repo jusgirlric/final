@@ -3,23 +3,24 @@
 *{
 	box-sizing: border-box;
 }
-
+body{
+	background: linear-gradient(to bottom, rgba(242,109,67,1), rgba(242,109,67,.5));
+}
 	#container{
 	width: 800px;
 	margin: 0 auto;
 }
 @media only screen and (min-width: 800px){
-	flex-container{
-		display:flex;
+	.flex-container-snoozing{
+		display: flex;
+  align-items: flex-start;
+  gap: 20px;
+		flex-warp: wrap;
 	}
-body{
-	background: linear-gradient(to bottom, rgba(242,109,67,1), rgba(242,109,67,.5));
-}
-ul{
+.nav-feeding ul{
 	list-style-type: none;
 	width: 180px;
 	height: 620px;	
-	float: left;
 	background-color:#3DF2E0;
 	border-radius: 20px;
 	padding: 15px 15px 0px 15px;
@@ -50,40 +51,37 @@ li a:active{
 	font-size: 1.2em;
 	text-decoration: none;
 }
-.top{
+.top-feeding{
 	flex-grow:1;
-	width: 580px;
+	width: 560px;
 	height: 200px;
 	background-color: #3DF2E0;
 	border-radius: 20px;
 	margin: 10px 0px 10px 0px;
 	padding: 15px 15px 15px 15px;
 	font-size: .85em;
-	float: right;
 	color:#BF785E;
 }
-.center{
+.center-feeding{
 	flex-grow: 1;
-	width: 580px;
+	width: 560px;
 	height: 200px;
 	background-color: #3DF2E0;
 	border-radius: 20px;
 	margin: 0px 0px 10px 0px;
 	padding: 15px 15px 15px 15px;
     font-size:.85em;
-	float: right;
 	color:#BF785E;
 }
-.bottom{
+.bottom-feeding{
 	flex-grow: 1;
-	width: 580px;
+	width: 560px;
 	height: 200px;
 	background-color: #3DF2E0;
 	border-radius: 20px;
 	margin: 0px 0px 10px 0px;
 	padding: 15px 15px 15px 15px;
     font-size:.85em;
-	float: right;
 	color:#BF785E;
 }
 .delius-regular {
@@ -91,11 +89,13 @@ li a:active{
   font-weight: 400;
   font-style: normal;
 }
-img{
+.feeding-img1,
+	.feeding-img2,
+	.feeding-img3{
   float:left;
   margin-right: 20px;
 }
-	.img1{
+	.feeding-img1{
 		margin-top:35px;
 	}
 	.logo2{
@@ -119,29 +119,23 @@ header>h1{
     text-align: center; 
 	color:#4C5456;
 }
-section>h1{
-    text-align: center; 
-	color:#4C5456;
-}
-section>p{
-	text-align: center; 
+
+.top-feeding p,
+	.center-feeding p,
+	.bottom-feeding p{
 	color:#BF785E;
+		margin-left: 20px;
 }
-article >h2{
+.top-feeding h2,
+	.center-feeding h2,
+	.bottom-feeding h2{
 	text-align: center;
 	color:#BF785E;
-}
-article >p{
-	margin-left: 20px;
 }
 footer{
 	color:#4C5456;
 	clear:both;
 }
-h3{
-	margin-left: 240px;
-	}
-
 }
 @media only screen and (max-widith: 799px){
 	.flex-container{

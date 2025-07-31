@@ -50,7 +50,7 @@ li a:active{
 	font-size: 1.4em;
 	text-decoration: none;
 }
-.top{
+.about-top{
 	flex-grow:1;
 	width: 550px;
 	height: auto;
@@ -63,7 +63,7 @@ li a:active{
 	float: right;
 	color:#BF785E;
 }
-.center{
+.about-center{
 	flex-grow: 1;
 	width: 550px;
 	height: auto;
@@ -73,7 +73,7 @@ li a:active{
 	float: right;
 	color:#BF785E;
 }
-.bottom{
+.about-bottom{
 	flex-grow: 1;
 	width: 550px;
 	height: auto;
@@ -91,7 +91,7 @@ li a:active{
   font-weight: 400;
   font-style: normal;
 }
-.img1{
+.img-about{
   margin-left: 215px;  
 }
 	.logo2{
@@ -115,10 +115,18 @@ li a:active{
 	color:#4C5456;
 	text-align:center;
 }
-article >h2{
+.about-top >h2{
 	text-align: center;
 	color:#BF785E;
 }
+.about-center >h2{
+	text-align: center;
+	color:#BF785E;
+	}	
+	.about-bottom >h2{
+	text-align: center;
+		color: #BF785E;
+	}
 footer{
 	color:#4C5456;
 	clear:both;

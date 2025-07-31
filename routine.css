@@ -11,25 +11,27 @@ body{
 	margin: 0 auto;
 }
 @media only screen and (min-width: 800px){
-	flex-container{
-		display:flex;
+	.flex-container-snoozing{
+		display: flex;
+  align-items: flex-start;
+  gap: 20px;
+		flex-wrap: wrap;
 	}
-ul{
+.nav-routine{
 	list-style-type: none;
 	width: 180px;
-	height: 800px;	
-	float: left;
+	height: 545px;	
 	background-color:#3DF2E0;
 	border-radius: 20px;
 	padding: 15px 15px 0px 15px;
-	margin: 10px 20px 0px 0px;
+	margin: 10px 0px 0px 0px;
 	}
 li a{
 	display: block;
     padding: 8px 16px;
     text-decoration: none;
 }
-li a:link{
+	li a:link{
 	color:#BF785E;
 	font-size: 1.2em;
 	text-decoration: none;
@@ -49,38 +51,27 @@ li a:active{
 	font-size: 1.2em;
 	text-decoration: none;
 }
-.top-right{
-	width: 600px;
-	height: 200px;
+.top-routine{
+	width: 560px;
+	height: 220px;
 	background-color: #3DF2E0;
 	border-radius: 20px;
 	margin: 10px 0px 15px 0px;
 	padding: 15px 15px 15px 15px;
-	float: right;
 	font-size: .95em;
 	color: #BF785E;
 	flex-grow:1;
-}
-.bottom-right{
-	width: 600px;
-	height: 200px;
-	background-color:#3DF2E0;
-	border-radius: 20px;
-	margin: 0px 0px 15px 0px;
-	padding: 15px 15px 15px 15px;
-	float: right;
-    font-size:.95em;
-	color:#BF785E;
-		flex-grow:1;
+	overflow: hidden;
 }
 .delius-regular {
   font-family: "Delius", cursive;
   font-weight: 400;
   font-style: normal;
 }
-img{
+.routine-img{
   float:left;
-  margin-right: 20px;  
+  margin-right: 20px; 
+	padding-top: 10px;
 }
 .logo2{
 	width: 50px;
@@ -102,11 +93,11 @@ header >h1{
 
     text-align: center; color:#4C5456;
 }
-article >h2{
+.top-routine h2{
 	text-align: center;
 	color:#BF785E;
 }
-article >p{
+ .top-routine p{
 	margin-left: 20px;
 	 color:#BF785E;
 }
@@ -114,42 +105,43 @@ footer{
 	color:#4C5456;
 	clear:both;
 }
-table, th, td{
+	.routine-content {
+  width: 560px;
+		flex-grow: 1;
+}
+.routine-table{
 	text-align: center;
-	border: 5px solid #3DF2E0;
+	margin: 10px 0px 15px 0px;
 	padding: 10px 10px 10px 10px;
 	border-radius: 20px;
 	font-size:.95em;
 	color: #BF785E;
 }
-table{
-	margin-left: 200px;
-	width: 600px;
-	
+.routine-table table{
+  width: 560px;	
 }
-th, td{
+.routine-table th, td{
 	background-color: #3DF2E0;
+	border-radius: 20px;
 }
-	th{
+	.routine-table th{
 		text-decoration: underline;
 		font-size: 1.2em;
+		font-family: "Delius", cursive;
 	}
-caption{
+.routine-caption{
 	text-align: center;
 	border: 5px solid #3DF2E0;
 	padding: 10px 10px 10px 10px;
 	border-radius: 20px;
-	font-size:1.2em;
+	font-size:1.5em;
+	font-family: "Delius", cursive;
 	background-color: #3DF2E0;
 	margin-bottom: 10px;
 	color:#BF785E;
 }
-h4{
-	text-align: center;
-	color:#BF785E;
 }
-}
-@media only screen and (max-widith: 799px){
+@media only screen and (max-width: 799px){
 	.flex-container{
 		display:flex;
 		flex-direction: column;
